@@ -1,20 +1,19 @@
 package main
 
 import (
-	daythree "AoC2023/day_three"
+	daysix "AoC2023/day_six"
 	"bufio"
 	"fmt"
 	"os"
 )
 
 func main() {
-	var file, scanner, err = readFileToScan("day_three/data.txt")
+	var file, scanner, err = readFileToScan("day_six/data.txt")
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
-	// dayfour.DayFour(scanner, file)
-	daythree.DayThree(scanner, file)
+	daysix.DaySix(scanner, file)
 }
 func readFileToScan(path string) (*os.File, *bufio.Scanner, error) {
 
